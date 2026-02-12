@@ -91,7 +91,7 @@ A backend RESTful API built using NestJS, TypeORM, PostgreSQL, and JWT that simu
 
 The following ER diagram represents the database relationships used in this project:
 
-<img width="547" height="810" alt="image" src="https://github.com/user-attachments/assets/4cceb31d-9dc1-4acc-ba31-5672cc32ab94" />
+<img width="550" height="803" alt="image" src="https://github.com/user-attachments/assets/e96c8c00-2264-4729-a465-0b1236abc6dd" />
 
 It represents relationships between:
 
