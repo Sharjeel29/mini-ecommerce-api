@@ -3,6 +3,7 @@ Mini E-Commerce API
 A backend RESTful API built using NestJS, TypeORM, PostgreSQL, and JWT that simulates a basic online shopping platform.
 
 🚀 Features
+
 🔐 Authentication & Authorization
 
 - User Registration
