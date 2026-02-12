@@ -87,7 +87,7 @@ A backend RESTful API built using NestJS, TypeORM, PostgreSQL, and JWT that simu
 - Class Validator
 
 
-## 🗄️ Database Schema (ER Diagram)
+# 🗄️ Database Schema (ER Diagram)
 
 The following ER diagram represents the database relationships used in this project:
 
