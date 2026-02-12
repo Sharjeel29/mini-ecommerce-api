@@ -21,78 +21,138 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+📌 Mini E-Commerce API
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+A backend RESTful API built using NestJS, TypeORM, PostgreSQL, and JWT that simulates a basic online shopping platform.
 
-## Project setup
+🚀 Features
+🔐 Authentication & Authorization
 
-```bash
-$ npm install
-```
+User Registration
 
-## Compile and run the project
+User Login (JWT-based authentication)
 
-```bash
-# development
-$ npm run start
+Role-Based Access Control (Admin / Customer)
 
-# watch mode
-$ npm run start:dev
+Fraud prevention via order cancellation limit (max 3 cancellations)
 
-# production mode
-$ npm run start:prod
-```
+📦 Product Management (Admin Only)
 
-## Run tests
+Add new products
 
-```bash
-# unit tests
-$ npm run test
+Update product details
 
-# e2e tests
-$ npm run test:e2e
+Delete products
 
-# test coverage
-$ npm run test:cov
-```
+Manage product stock
 
-## Deployment
+🛒 Cart System (Customer Only)
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+Add product to cart
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+Remove product from cart
 
-```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
-```
+Prevent duplicate cart entries (auto-increment quantity)
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+🧾 Order Processing
 
-## Resources
+Place order from cart
 
-Check out a few resources that may come in handy when working with NestJS:
+Order total calculated on backend
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+Validate stock before order
 
-## Support
+Prevent negative inventory
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Deduct stock after successful order
 
-## Stay in touch
+Clear cart after order placement
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+Cancel pending orders
 
-## License
+Restore stock on cancellation
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+🧱 Core Entities
+
+User
+
+Product
+
+CartItem
+
+Order
+
+OrderItem
+
+📏 Business Rules Implemented
+
+Customers cannot order more than available stock
+
+Order total is calculated server-side
+
+Stock is deducted only after successful order creation
+
+Stock is restored upon cancellation
+
+Users are blocked after 3 order cancellations (fraud prevention)
+
+🛠 Tech Stack
+
+NestJS
+
+TypeORM
+
+PostgreSQL
+
+JWT Authentication
+
+Class Validator
+
+⚙️ Setup Instructions
+
+Clone the repository:
+
+git clone https://github.com/Sharjeel29/mini-ecommerce-api.git
+
+
+Install dependencies:
+
+npm install
+
+
+Configure PostgreSQL connection inside app.module.ts
+
+Run the server:
+
+npm run start:dev
+
+
+Server runs on:
+
+http://localhost:3000
+
+📬 API Testing
+
+API endpoints can be tested using Postman.
+
+📌 Assumptions
+
+Payment simulation is not implemented (optional bonus feature).
+
+Database transactions were not implemented.
+
+Order status update by admin is not implemented (basic status handling included).
+
+🎯 Submission Notes
+
+This project fulfills all core functional requirements including authentication, role-based authorization, business rule enforcement, stock management, and fraud prevention.
+
+🚀 After Pasting This
+
+Save README.md
+
+Run:
+
+git add README.md
+git commit -m "Updated README"
+git push
