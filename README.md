@@ -101,6 +101,10 @@ It represents relationships between:
 - Orders
 - Order Items
 
+## 📬 API Testing (Postman)
+<img width="1742" height="877" alt="image" src="https://github.com/user-attachments/assets/8f17363a-99fd-4d09-92bd-d04ce8a25326" />
+<img width="1776" height="811" alt="image" src="https://github.com/user-attachments/assets/5698e763-c98e-4372-be59-ce80f5527575" />
+<img width="1782" height="880" alt="image" src="https://github.com/user-attachments/assets/d3478fb8-b894-41a0-bc04-7ed5d60c8218" />
 
 
 
