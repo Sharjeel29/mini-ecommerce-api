@@ -127,14 +127,6 @@ http://localhost:3000
 
 All API endpoints can be tested using Postman.
 
-📌 Assumptions
-
-Payment simulation is not implemented (optional bonus feature).
-
-Database transactions were not implemented.
-
-Admin order status update endpoint is not implemented (basic order status handling is included).
-
 🎯 Submission Notes
 
 This project fulfills all core functional requirements including authentication, role-based authorization, product management, cart operations, order processing, stock validation, and fraud prevention logic.
