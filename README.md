@@ -86,17 +86,17 @@ JWT Authentication
 Class Validator
 
 ⚙️ Setup Instructions
-1️⃣ Clone the repository
+1️. Clone the repository
 git clone https://github.com/Sharjeel29/mini-ecommerce-api.git
 
-2️⃣ Install dependencies
+2. Install dependencies
 npm install
 
-3️⃣ Configure database
+3️. Configure database
 
 Update PostgreSQL connection settings inside app.module.ts.
 
-4️⃣ Run the server
+4️. Run the server
 npm run start:dev
 
 
