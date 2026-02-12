@@ -86,6 +86,24 @@ A backend RESTful API built using NestJS, TypeORM, PostgreSQL, and JWT that simu
 
 - Class Validator
 
+
+## 🗄️ Database Schema (ER Diagram)
+
+The following ER diagram represents the database relationships used in this project:
+
+<img width="547" height="810" alt="image" src="https://github.com/user-attachments/assets/4cceb31d-9dc1-4acc-ba31-5672cc32ab94" />
+
+It represents relationships between:
+
+- Users
+- Products
+- Cart Items
+- Orders
+- Order Items
+
+
+
+
 ⚙️ Setup Instructions
 1️. Clone the repository
 git clone https://github.com/Sharjeel29/mini-ecommerce-api.git
