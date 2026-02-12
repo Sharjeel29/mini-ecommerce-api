@@ -1,5 +1,4 @@
-
-📌 Mini E-Commerce API
+Mini E-Commerce API
 
 A backend RESTful API built using NestJS, TypeORM, PostgreSQL, and JWT that simulates a basic online shopping platform.
 
@@ -12,7 +11,7 @@ User Login (JWT-based authentication)
 
 Role-Based Access Control (Admin / Customer)
 
-Fraud prevention via order cancellation limit (max 3 cancellations)
+Fraud prevention via order cancellation limit (maximum 3 cancellations per user)
 
 📦 Product Management (Admin Only)
 
@@ -22,7 +21,7 @@ Update product details
 
 Delete products
 
-Manage product stock
+Manage and update product stock
 
 🛒 Cart System (Customer Only)
 
@@ -36,19 +35,19 @@ Prevent duplicate cart entries (auto-increment quantity)
 
 Place order from cart
 
-Order total calculated on backend
+Order total calculated on the backend
 
-Validate stock before order
+Validate stock before order placement
 
 Prevent negative inventory
 
-Deduct stock after successful order
+Deduct stock after successful order creation
 
 Clear cart after order placement
 
 Cancel pending orders
 
-Restore stock on cancellation
+Restore stock upon cancellation
 
 🧱 Core Entities
 
@@ -72,7 +71,7 @@ Stock is deducted only after successful order creation
 
 Stock is restored upon cancellation
 
-Users are blocked after 3 order cancellations (fraud prevention)
+Users are blocked after 3 order cancellations (fraud prevention logic)
 
 🛠 Tech Stack
 
@@ -87,31 +86,27 @@ JWT Authentication
 Class Validator
 
 ⚙️ Setup Instructions
-
-Clone the repository:
-
+1️⃣ Clone the repository
 git clone https://github.com/Sharjeel29/mini-ecommerce-api.git
 
-
-Install dependencies:
-
+2️⃣ Install dependencies
 npm install
 
+3️⃣ Configure database
 
-Configure PostgreSQL connection inside app.module.ts
+Update PostgreSQL connection settings inside app.module.ts.
 
-Run the server:
-
+4️⃣ Run the server
 npm run start:dev
 
 
-Server runs on:
+The server will run at:
 
 http://localhost:3000
 
 📬 API Testing
 
-API endpoints can be tested using Postman.
+All API endpoints can be tested using Postman.
 
 📌 Assumptions
 
@@ -119,18 +114,8 @@ Payment simulation is not implemented (optional bonus feature).
 
 Database transactions were not implemented.
 
-Order status update by admin is not implemented (basic status handling included).
+Admin order status update endpoint is not implemented (basic order status handling is included).
 
 🎯 Submission Notes
 
-This project fulfills all core functional requirements including authentication, role-based authorization, business rule enforcement, stock management, and fraud prevention.
-
-🚀 After Pasting This
-
-Save README.md
-
-Run:
-
-git add README.md
-git commit -m "Updated README"
-git push
+This project fulfills all core functional requirements including authentication, role-based authorization, product management, cart operations, order processing, stock validation, and fraud prevention logic.
