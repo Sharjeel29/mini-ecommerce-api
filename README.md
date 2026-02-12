@@ -2,88 +2,88 @@ Mini E-Commerce API
 
 A backend RESTful API built using NestJS, TypeORM, PostgreSQL, and JWT that simulates a basic online shopping platform.
 
-🚀 Features
+* Features
 🔐 Authentication & Authorization
 
-User Registration
+- User Registration
 
-User Login (JWT-based authentication)
+- User Login (JWT-based authentication)
 
-Role-Based Access Control (Admin / Customer)
+- Role-Based Access Control (Admin / Customer)
 
-Fraud prevention via order cancellation limit (maximum 3 cancellations per user)
+- Fraud prevention via order cancellation limit (maximum 3 cancellations per user)
 
 📦 Product Management (Admin Only)
 
-Add new products
+- Add new products
 
-Update product details
+- Update product details
 
-Delete products
+- Delete products
 
-Manage and update product stock
+- Manage and update product stock
 
 🛒 Cart System (Customer Only)
 
-Add product to cart
+- Add product to cart
 
-Remove product from cart
+- Remove product from cart
 
-Prevent duplicate cart entries (auto-increment quantity)
+- Prevent duplicate cart entries (auto-increment quantity)
 
 🧾 Order Processing
 
-Place order from cart
+- Place order from cart
 
-Order total calculated on the backend
+- Order total calculated on the backend
 
-Validate stock before order placement
+- Validate stock before order placement
 
-Prevent negative inventory
+- Prevent negative inventory
 
-Deduct stock after successful order creation
+- Deduct stock after successful order creation
 
-Clear cart after order placement
+- Clear cart after order placement
 
-Cancel pending orders
+- Cancel pending orders
 
-Restore stock upon cancellation
+- Restore stock upon cancellation
 
 🧱 Core Entities
 
-User
+- User
 
-Product
+- Product
 
-CartItem
+- CartItem
 
-Order
+- Order
 
-OrderItem
+- OrderItem
 
 📏 Business Rules Implemented
 
-Customers cannot order more than available stock
+- Customers cannot order more than available stock
 
-Order total is calculated server-side
+- Order total is calculated server-side
 
-Stock is deducted only after successful order creation
+- Stock is deducted only after successful order creation
 
-Stock is restored upon cancellation
+- Stock is restored upon cancellation
 
-Users are blocked after 3 order cancellations (fraud prevention logic)
+- Users are blocked after 3 order cancellations (fraud prevention logic)
 
 🛠 Tech Stack
 
-NestJS
+- NestJS
 
-TypeORM
+- TypeORM
 
-PostgreSQL
+- PostgreSQL
 
-JWT Authentication
+- JWT Authentication
 
-Class Validator
+- Class Validator
 
 ⚙️ Setup Instructions
 1️. Clone the repository
